@@ -1,0 +1,45 @@
+TODO Liste
+
+add handle of selections
+add handle of subcategories, if there is more than one parent Category
+add additional query parameter for e.g. media type usw
+add additional fields (e.g priority)
+add categories as select box
+add serach box
+add secure url parameter
+
+add subfolder for find by path + add possibmore than one path
+
+
+add felxform values
+	- use subcategories
+	- filter
+
+
+add icons for files
+add a gallery example
+add jquery functions
+add a page browser + ajax page browser
+add more translations
+add viewhelper for swf, flv, lightbox usw.
+add documentation
+
+add alternitive multilinguage handling (like in the Alpine Project)
+add handling for news/content/pages
+add function for Menu generation
+
+-- Bugs --
+
+code cleanup
+
+-- DONE --
+add handle of dam assets
+add extension icon
+add sorting in ts and flexform
+add handle of subcategories
+add find by path
+
+
+-- Bugs Done --
+limits are not handled correctly if there is more than one Category selected
+sorting of Categories are not correct

@@ -1,0 +1,6 @@
+{namespace h=Tx_MaritDam_ViewHelpers}
+<f:for each="{Category}" as="cat">
+    <h2>{cat.title}</h2>
+	<f:debug title="subCategories">{cat.subCategories}</f:debug>
+	<f:render partial="{partial}" arguments="{Dam: cat.assets, settings: settings}"/>
+</f:for>

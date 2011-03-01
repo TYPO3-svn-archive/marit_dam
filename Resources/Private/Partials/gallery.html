@@ -1,0 +1,6 @@
+{namespace h=Tx_MaritDam_ViewHelpers}
+<f:for each="{Dam}" as="asset">
+	<f:link.external uri="{asset.filePath}{asset.fileName}" rel="tx_maritdam_gallery_img" target="_blank" title="{asset.caption}">
+		<f:image src="{asset.filePath}{asset.fileName}" width="{settings.gallery.thumbnail.width}" height="{settings.gallery.thumbnail.height}" alt="{asset.title}" />
+	</f:link.external>
+</f:for>

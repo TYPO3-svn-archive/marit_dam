@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'marit_dam'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_maritdam.pi1_title">DAM</label>
+			<label index="tx_maritdam.pi1_plus_wiz_description">Display DAM assets on your page.</label>
+			<label index="tx_maritdam.settings.mode">Mode</label>
+			<label index="tx_maritdam.settings.mode.list">List</label>
+			<label index="tx_maritdam.settings.mode.gallery">Gallery</label>
+			<label index="tx_maritdam.settings.options">Options</label>
+			<label index="tx_maritdam.settings.filter">Filter</label>
+			<label index="tx_maritdam.settings.other">Other</label>
+			<label index="tx_maritdam.settings.source">Source</label>
+			<label index="tx_maritdam.settings.category">DAM category</label>
+			<label index="tx_maritdam.settings.max_items">Max. number of assets to display at once</label>
+			<label index="tx_maritdam.settings.category.group_by_category">Group by category</label>
+			<label index="tx_maritdam.settings.asset">DAM asset</label>
+			<label index="tx_maritdam.settings.path">File path</label>
+			<label index="tx_maritdam.settings.path.include_subpath">Include subfolders</label>
+			<label index="tx_maritdam.settings.selection">DAM selection</label>
+			<label index="tx_maritdam.settings.sorting">Sorting</label>
+			<label index="tx_maritdam.settings.sorting.title">Title</label>
+			<label index="tx_maritdam.settings.sorting.file_name">File name</label>
+			<label index="tx_maritdam.settings.sorting.file_size">File size</label>
+			<label index="tx_maritdam.settings.sorting.date">Date</label>
+			<label index="tx_maritdam.settings.file_type">File types</label>
+			<label index="tx_maritdam.settings.language">Show only records with one of this languages assigned as "Content language" (and the records with the language "--All--"):</label>
+			<label index="tx_maritdam.settings.show_pagebrowser">Show page browser</label>
+			<label index="tx_dam_item.language">Content is only siginificant for this languages (Content language)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_maritdam.pi1_title">DAM</label>
+			<label index="tx_maritdam.settings.mode">Modus</label>
+			<label index="tx_maritdam.pi1_plus_wiz_description">Zur Darstellung von DAM-Assets auf der Seite.</label>
+			<label index="tx_maritdam.settings.options">Optionen</label>
+			<label index="tx_maritdam.settings.filter">Filter</label>
+			<label index="tx_maritdam.settings.other">Sonstiges</label>
+			<label index="tx_maritdam.settings.source">Quelle</label>
+			<label index="tx_maritdam.settings.category">DAM Kategorie</label>
+			<label index="tx_maritdam.settings.max_items">Anzahl der angezeigten Assets pro Seite</label>
+			<label index="tx_maritdam.settings.category.group_by_category">Gruppierung nach Kategorie</label>
+			<label index="tx_maritdam.settings.asset">DAM Asset</label>
+			<label index="tx_maritdam.settings.path">Verzeichnis</label>
+			<label index="tx_maritdam.settings.path.include_subpath">Unterverzeichnisse einbeziehen</label>
+			<label index="tx_maritdam.settings.selection">DAM Auswahl</label>
+			<label index="tx_maritdam.settings.sorting">Reihenfolge</label>
+			<label index="tx_maritdam.settings.sorting.title">Titel</label>
+			<label index="tx_maritdam.settings.sorting.file_name">Dateiname</label>
+			<label index="tx_maritdam.settings.sorting.file_size">Dateigröße</label>
+			<label index="tx_maritdam.settings.sorting.date">Datum</label>
+			<label index="tx_maritdam.settings.file_type">Dateitypen</label>
+			<label index="tx_maritdam.settings.language">Nur Datensätze anzeigen, die eine dieser Sprachen als "Sprache des Inhalts" zugewiesen haben (und die Datensätze mit der Sprache "--All--"):</label>
+			<label index="tx_maritdam.settings.show_pagebrowser">Pagebrowser anzeigen</label>
+			<label index="tx_dam_item.language">Inhalt ist nur für diese Sprachen relevant (Sprache des Inhalts)</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,171 @@
+plugin.tx_maritdam {
+	settings{
+		partial = asset
+		maxItems = 10
+		sorting = title
+		order = ASC
+		source =
+		asset{
+		}
+		category{
+			data =
+			groupByCategory = 0
+		}
+		path{
+			data = 
+			includeSubpaths = 0
+		}
+		selection{
+			data =
+		}
+
+		useLightBox = 0
+		fileTypes {
+			images = jpg, jpeg, png, gif
+			audio = mp3
+			video = flv
+			doc = 
+		}
+
+		pagebrowser{
+			range = 5
+			show = 0
+		}
+		filter{
+		}
+
+		gallery {
+			thumbnail {
+				width = 150c
+				height = 150c
+			}
+		}
+	}
+	persistence {
+		storagePid = {$plugin.tx_maritdam.persistence.storagePid}
+	}	
+	view {
+		templateRootPath = {$plugin.tx_maritdam.view.templateRootPath}
+		partialRootPath = {$plugin.tx_maritdam.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_maritdam.view.layoutRootPath}
+	}
+
+}
+
+#MHU: We do the mapping here, because this mapping is used in many other extension. When we do the mapping in plugin.tx_maritdam we have to repeat in in every extension which uses this models (http://lists.typo3.org/pipermail/typo3-project-typo3v4mvc/2010-April/004141.html)
+config.tx_extbase {
+	persistence {
+		classes {
+			Tx_MaritDam_Domain_Model_Dam {
+				mapping {
+					tableName = tx_dam
+					/* Not really needed
+					subclasses {
+						Tx_MaritDam_Domain_Model_DamApplication = Tx_MaritDam_Domain_Model_DamApplication
+						Tx_MaritDam_Domain_Model_DamAudio = Tx_MaritDam_Domain_Model_DamAudio
+						Tx_MaritDam_Domain_Model_DamCollection = Tx_MaritDam_Domain_Model_DamCollection
+						Tx_MaritDam_Domain_Model_DamDataset = Tx_MaritDam_Domain_Model_DamDataset
+						Tx_MaritDam_Domain_Model_DamFont = Tx_MaritDam_Domain_Model_DamFont
+						Tx_MaritDam_Domain_Model_DamImage = Tx_MaritDam_Domain_Model_DamImage
+						Tx_MaritDam_Domain_Model_DamInteractive = Tx_MaritDam_Domain_Model_DamInteractive
+						Tx_MaritDam_Domain_Model_DamModel = Tx_MaritDam_Domain_Model_DamModel
+						Tx_MaritDam_Domain_Model_DamService = Tx_MaritDam_Domain_Model_DamService
+						Tx_MaritDam_Domain_Model_DamSoftware = Tx_MaritDam_Domain_Model_DamSoftware
+						Tx_MaritDam_Domain_Model_DamText = Tx_MaritDam_Domain_Model_DamText
+						Tx_MaritDam_Domain_Model_DamUndefined = Tx_MaritDam_Domain_Model_DamUndefined
+						Tx_MaritDam_Domain_Model_DamVideo = Tx_MaritDam_Domain_Model_DamVideo
+					}
+					*/
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamApplication {
+				mapping {
+					tableName = tx_dam
+					recordType = 12
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamAudio {
+				mapping {
+					tableName = tx_dam
+					recordType = 3
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamCollection {
+				mapping {
+					tableName = tx_dam
+					recordType = 10
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamDataset {
+				mapping {
+					tableName = tx_dam
+					recordType = 9
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamFont {
+				mapping {
+					tableName = tx_dam
+					recordType = 7
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamImage {
+				mapping {
+					tableName = tx_dam
+					recordType = 2
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamInteractive {
+				mapping {
+					tableName = tx_dam
+					recordType = 5
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamModel {
+				mapping {
+					tableName = tx_dam
+					recordType = 8
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamService {
+				mapping {
+					tableName = tx_dam
+					recordType = 6
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamSoftware {
+				mapping {
+					tableName = tx_dam
+					recordType = 11
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamText {
+				mapping {
+					tableName = tx_dam
+					recordType = 1
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamUndefined {
+				mapping {
+					tableName = tx_dam
+					recordType = 0
+				}
+			}
+			Tx_MaritDam_Domain_Model_DamVideo {
+				mapping {
+					tableName = tx_dam
+					recordType = 4
+				}
+			}
+			Tx_MaritDam_Domain_Model_Category {
+				mapping {
+					tableName = tx_dam_cat
+				}
+			}
+			Tx_MaritDam_Domain_Model_Selection {
+				mapping {
+					tableName = tx_dam_selection
+				}
+			}
+		}
+	}
+}

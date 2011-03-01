@@ -1,0 +1,21 @@
+{namespace h=Tx_MaritDam_ViewHelpers}
+<ul>
+	<f:for each="{Dam}" as="asset">
+		<f:if condition="<h:isIn value='{asset.fileType}' search='{fileTypes.video}'/>">
+			<li><f:link.external uri="#inline{asset.uid}" rel="example_group"  target="_blank">{asset.title}</f:link.external>
+			<h:flowPlayer flv="{asset.filePath}{asset.fileName}" width="520" height="330" lightBoxReady="true" lightBoxId="inline{asset.uid}"/>
+			</li>
+		</f:if>
+		<f:if condition="<h:isIn value='{asset.fileType}' search='{fileTypes.audio}'/>">
+			<li><f:link.external uri="#inline{asset.uid}" rel="example_group"  target="_blank">{asset.title}</f:link.external>
+			<h:flowPlayer flv="{asset.filePath}{asset.fileName}" width="400" height="100" lightBoxReady="true" lightBoxId="inline{asset.uid}"/>
+			</li>
+		</f:if>
+		<f:if condition="<h:isIn value='{asset.fileType}' search='{fileTypes.images}'/>">
+			<li><f:link.external uri="<h:uri.imageResource src='{asset.filePath}{asset.fileName}' width='200' />" rel="example_group"  target="_blank">{asset.title}</f:link.external></li>
+		</f:if>
+		<f:if condition="<h:isIn value='{asset.fileType}' search='{fileTypes.all}' negate='true'/>">
+			<li><f:link.external uri="{asset.filePath}{asset.fileName}" class="docs" >{asset.title}</f:link.external></li>
+		</f:if>
+	</f:for>
+</ul>

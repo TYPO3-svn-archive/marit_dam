@@ -1,0 +1,14 @@
+plugin.tx_maritdam {
+	view {
+		 # cat=plugin.tx_maritdam/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:marit_dam/Resources/Private/Templates/
+		 # cat=plugin.tx_maritdam/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:marit_dam/Resources/Private/Partials/
+		 # cat=plugin.tx_maritdam/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:marit_dam/Resources/Private/Layouts/
+	}
+	persistence {
+		 # cat=plugin.tx_maritdam//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}

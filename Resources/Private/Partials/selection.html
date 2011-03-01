@@ -1,0 +1,23 @@
+{namespace h=Tx_MaritDam_ViewHelpers}
+<ul class="damList">
+	<f:for each="{Dam}" as="asset">
+		<li>
+			<div class="damIcon {asset.fileMimeType}">
+			
+			</div>
+			<div class="damFile">
+				<f:link.external uri="{asset.filePath}{asset.fileName}" class="docs" >
+					{asset.title}
+				</f:link.external>
+			</div>
+				<br class="clear" />
+				<div class="damDescription">
+					{asset.description}
+				</div>
+				<div class="damSize">
+					&#040;<h:format.byte labels="<f:translate key='byteLabels' />">{asset.fileSize}</h:format.byte>&#041;
+				</div>
+					<br class="clear" />
+		</li>
+	</f:for>
+</ul>

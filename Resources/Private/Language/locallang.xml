@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the DAM Extbase Connector extension</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="byteLabels">B | kB | MB | GB</label>
+			<label index="fileSize">file size</label>
+			<label index="fileType">file type</label>
+			<label index="fileDate">file date</label>
+			<label index="fileFormat">file format</label>
+			<label index="previous">previous</label>
+			<label index="first">first</label>
+			<label index="last">last</label>
+			<label index="next">next</label>
+			<label index="page">page</label>
+			<label index="out_of">out of</label>
+			<label index="current">current</label>
+			<label index="more">...</label>
+			<label index="no_assets">no assests available</label>
+		</languageKey>
+	</data>
+</T3locallang>
